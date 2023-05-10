@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Karla', sans-serif;
+      background-color: var(--Grayish-Blue);
+    }
+    :root{
+      --Cyan: hsl(179, 62%, 43%);
+      --Bright-Yellow: hsl(71, 73%, 54%);
+      --Light-Gray: hsl(204, 43%, 93%);
+      --Grayish-Blue: hsl(217, 41%, 90%);
+      --karma:'Karla', sans-serif;
+
+      --weight400:400;
+      --weight700:700;
+
+    }
+    main{
+      height: 100vh;
+    }
+    .box{
+      margin: 0 auto;
+      margin-top: 8%;
+      width: 850px;
+      height: 500px;
+      border-radius: 15px;
+    }
+    .top-box{
+      height: 45%;
+      background-color: var(--Light-Gray);
+      border-radius: 15px 15px 0 0;
+    }
+    .bottom-box{
+      display: flex;
+
+    }
+    .left-box{
+      width: 50%;
+      height: 270px;
+      background-color: var(--Cyan);
+      color: white;
+      border-radius: 0 0 0 15px;
+      padding-left: 25px;
+    }
+    .right-box{
+      width: 50%;
+      background-color: rgb(51, 200, 185);
+      color: white;
+      border-radius: 0 0 15px 0;
+      padding-left: 25px;
+    }
+    .header{
+      font-weight: var(--weight700);
+      font-size: 24px;
+      padding-left: 60px;
+      color: var(--Cyan);
+      padding-top: 40px;
+    }
+    .header-se{
+      font-size: 16px;
+      padding-left: 60px;
+      color: var(--Bright-Yellow);
+    }
+
+    .paragraf{
+      font-weight: 200;
+      padding-left: 60px;
+      padding-right: 250px;
+      line-height: 30px;
+    }
+    .l-head{
+      margin-top: 40px;
+      margin-left:20px;
+      font-weight: 400;
+      font-size: 18px;
+      
+    }
+    .l-dolar{
+      font-size: 24px;
+      font-weight: 400;
+      margin-left:20px;
+    }
+    #mount{
+      font-size: 12px;
+      font-weight: 100;
+      margin-left:20px;
+      
+    }
+    .l-paragraf{
+      margin-top: -10px;
+      margin-left:20px;
+    }
+    .btn{
+      width: 250px;
+      height: 50px;
+      background-color: var(--Bright-Yellow);
+      border: 0px;
+      border-radius: 5px;
+      color: white;
+      margin-top: 20px;
+      margin-left: 20px;
+      
+    }
+    .r-head{
+      margin-top: 30px;
+      padding-left: 10px;
+    }
+    .r-paragraf{
+      padding-left: 10px;
+      padding-right: 160px;
+      line-height: 25px;
+      font-size: 16px;
+      font-family: 'Karla', sans-serif;
+      font-weight: 100;
+
+    }
+    .attribution { font-size: 11px; text-align: center; margin-top: -150px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+      <section class="">
+        <article class="box">
+          <div class="top-box">
+   <h1 class="header">Join our community</h1> 
+
+   <h1 class="header-se">30-day, hassle-free money back guarantee</h1> 
+  
+   <p class="paragraf">Gain access to our full library of tutorials along with expert code reviews. 
+    Perfect for any developers who are serious about honing their skills.</p> 
+  </div>
+  <div class="bottom-box">
+  <div class="left-box">
+   <h1 class="l-head"> Monthly Subscription</h1>
+  
+   <h1 class="l-dolar"> &dollar;29 <span id="mount">per month</span> </h1>
+   <p class="l-paragraf">Full access for less than &dollar;1 a day</p> 
+  
+   <a href=""><button type="" class="btn">Sign Up</button></a>  
+  </div>
+  <div class="right-box">
+
+  
+  <h1 class="r-head">Why Us</h1>  
+  
+   <p class="r-paragraf">
+    Tutorials by industry experts
+    Peer &amp; expert code review
+    Coding exercises
+    Access to our GitHub repos
+    Community forum
+    Flashcard decks
+    New videos every week
+  </p> 
+</div>
+</div>
+      </article>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Yetkin Karasungur</a>.
+    </p>
+  </footer>
+</body>
+</html>
